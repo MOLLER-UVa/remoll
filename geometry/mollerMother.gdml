@@ -230,6 +230,12 @@
 	<file name="target/subTargetRegion.gdml"/>
 	<positionref ref="targetCenter"/>
       </physvol>
+      <!-- Helicoil add region -->
+
+      <physvol>
+        <file name="helicoil.gdml"/>
+        <positionref ref="targetCenter"/>
+      </physvol>
 
       <!-- Hall -->
       <physvol>
