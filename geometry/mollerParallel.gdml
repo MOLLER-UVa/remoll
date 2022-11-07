@@ -1322,6 +1322,12 @@
       <volumeref ref="PSbunkerTopVP_log"/>
       <position name="PSbunkerTopVP_pos" unit="mm" x="4123.944+5871.21+1" y="-948.86+75+3429/2+1-786/2" z="279.5+19054/2"/>
     </physvol>
+
+      <physvol>
+        <file name="helicoilParallel.gdml"/>
+        <positionref ref="targetCenter"/>
+      </physvol>
+
     
     <auxiliary auxtype="Alpha" auxvalue="0.1"/>
   </volume>
