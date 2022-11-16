@@ -1,0 +1,41 @@
+<volume name="helicoil_outer_pr_logic">
+    <materialref ref="G4_Galactic"/>
+    <solidref ref="helicoil_outer_solid"/> 
+    <auxiliary auxtype="SensDet" auxvalue="planeDet"/>
+    <auxiliary auxtype="DetNo" auxvalue="910"/>
+</volume>
+<volume name="helicoil_center_pr_logic">
+    <materialref ref="G4_Galactic"/>
+    <solidref ref="helicoil_center_solid"/> 
+    <auxiliary auxtype="SensDet" auxvalue="planeDet"/>
+    <auxiliary auxtype="DetNo" auxvalue="911"/>
+</volume>
+<volume name="helicoil_inner_pr_logic">
+    <materialref ref="G4_Galactic"/>
+    <solidref ref="helicoil_inner_solid"/> 
+    <auxiliary auxtype="SensDet" auxvalue="planeDet"/>
+    <auxiliary auxtype="DetNo" auxvalue="912"/>
+</volume>
+
+
+
+
+<volume name="helicoil_all_pr_logic">
+  <materialref ref="G4_Galactic"/>
+  <solidref ref="helicoilall_multiUnion"/> 
+
+  <physvol name="helicoil_outer_phys">
+   <volumeref ref="helicoil_outer_pr_logic"/>
+   <positionref ref="helicoil_outer_position"/>
+  </physvol>
+
+  <physvol name="helicoil_center_phys">
+   <volumeref ref="helicoil_center_pr_logic"/>
+   <positionref ref="helicoil_center_position"/>
+  </physvol>
+
+  <physvol name="helicoil_inner_phys">
+   <volumeref ref="helicoil_inner_pr_logic"/>
+   <positionref ref="helicoil_inner_position"/>
+  </physvol>
+</volume>

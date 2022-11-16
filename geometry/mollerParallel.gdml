@@ -1324,7 +1324,7 @@
     </physvol>
 
       <physvol>
-        <file name="helicoilParallel.gdml"/>
+          <file name="helicoil/helicoilParallel.gdml"/>
         <positionref ref="targetCenter"/>
       </physvol>
 

@@ -33,14 +33,15 @@
 /remoll/SD/detect secondaries 28
 /remoll/SD/detect boundaryhits 28
 
-/remoll/SD/enable 94
-/remoll/SD/detect lowenergyneutral 94
-/remoll/SD/detect boundaryhits 94
+/remoll/SD/enable 911
+/remoll/SD/detect lowenergyneutral 911
+/remoll/SD/detect secondaries 911
+/remoll/SD/detect boundaryhits 911
 
-/control/execute macros/kryptonite.mac
+#/control/execute macros/kryptonite.mac
 
 /process/list
 /remoll/seed 123456
-/remoll/filename helicoilout-94-1.root
+/remoll/filename helicoilout-911-beam-1k-new-geometry-no-disk-02.root
 
-/run/beamOn 100
+/run/beamOn 1000

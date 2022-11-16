@@ -49,10 +49,12 @@
                 <volumeref ref="flng_logic1"/>
                 <position name="targ_flng_vac_window" unit="mm" x="0" y="0" z="flngPos"/>
             </physvol>
+            <!--
             <physvol>
                 <volumeref ref="flng_logic2"/>
                 <position name="targ_flng_vac_window" unit="mm" x="0" y="0" z="flngPos - flngThickness"/>
             </physvol>
+            -->
 
             <physvol>
                 <volumeref ref="flng_logic3"/>

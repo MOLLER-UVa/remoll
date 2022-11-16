@@ -20,7 +20,8 @@
         <box lunit="m" name="parallelTestRegion_solid" x="8.1" y="9.964" z="6.38"/>
 
         <tube aunit="deg" deltaphi="360" lunit="mm" name="parallelFlang_1" rmin="parallelFlangInR" rmax="parallelFlangInR + parallelFlangWidth" z="parallelFlangThickness"/>
-        <tube aunit="deg" deltaphi="360" lunit="mm" name="parallelFlang_2" rmin="parallelFlangInR" rmax="parallelFlangInR + parallelFlangWidth" z="parallelFlangThickness"/>
+        <tube aunit="deg" deltaphi="360" lunit="mm" name="parallelFlang_2" rmin="0" rmax="parallelFlangInR + parallelFlangWidth" z="parallelFlangThickness"/>
+        <!--tube aunit="deg" deltaphi="360" lunit="mm" name="parallelFlang_2" rmin="parallelFlangInR" rmax="parallelFlangInR + parallelFlangWidth" z="parallelFlangThickness"/-->
         <tube aunit="deg" deltaphi="360" lunit="mm" name="parallelFlang_3" rmin="parallelFlangInR" rmax="parallelFlangInR + parallelFlangWidth" z="parallelFlangThickness"/>
     </solids>
 
@@ -34,7 +35,6 @@
             <solidref ref="parallelFlang_2"/>
             <auxiliary auxtype="Color" auxvalue="purple"/>
             <auxiliary auxtype="SensDet" auxvalue="planeDet"/>
-            <auxiliary auxtype="DetType" auxvalue="lowenergyneutral"/>
             <auxiliary auxtype="DetNo" auxvalue="94"/>
         </volume>
 

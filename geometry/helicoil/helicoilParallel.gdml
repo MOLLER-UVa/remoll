@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE gdml [
+<!ENTITY helicoilParallel_matrix SYSTEM "helicoil_matrix.xml">
+<!ENTITY helicoilParallel_positions SYSTEM "helicoil_positions.xml">
+<!ENTITY helicoilParallel_solids SYSTEM "helicoil_solids.xml">
+<!ENTITY helicoilParallel_volumes SYSTEM "helicoilParallel_volumes.xml">
+<!ENTITY materials SYSTEM "../materials.xml">
+]>
+
+<gdml 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
+
+<define>
+ &helicoilParallel_matrix;
+ &helicoilParallel_positions;
+</define>
+
+<materials>
+</materials>
+
+<solids>
+ &helicoilParallel_solids;
+</solids>
+
+<structure>
+ &helicoilParallel_volumes;
+</structure>
+
+<setup name="helicoilParallel_setup" version="1.0">
+  <world ref="helicoil_all_pr_logic"/>
+</setup>
+
+</gdml>

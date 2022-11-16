@@ -1,0 +1,34 @@
+<volume name="helicoil_outer_logic">
+    <materialref ref="Inconel625"/>
+    <solidref ref="helicoil_outer_solid"/> 
+    <auxiliary auxtype="Color" auxvalue="Cyan"/>
+</volume>
+<volume name="helicoil_center_logic">
+    <materialref ref="Inconel625"/>
+    <solidref ref="helicoil_center_solid"/> 
+    <auxiliary auxtype="Color" auxvalue="Cyan"/>
+</volume>
+<volume name="helicoil_inner_logic">
+    <materialref ref="Inconel625"/>
+    <solidref ref="helicoil_inner_solid"/> 
+    <auxiliary auxtype="Color" auxvalue="Cyan"/>
+</volume>
+
+<volume name="helicoil_all_logic">
+    <materialref ref="G4_Galactic"/>
+    <solidref ref="helicoilall_multiUnion"/> 
+
+    <physvol name="helicoil_outer_pv">
+        <volumeref ref="helicoil_outer_logic"/>
+        <positionref ref="helicoil_outer_position"/>
+    </physvol>
+
+    <physvol name="helicoil_center_pv">
+        <volumeref ref="helicoil_center_logic"/>
+        <positionref ref="helicoil_center_position"/>
+    </physvol>
+    <physvol name="helicoil_inner_pv">
+        <volumeref ref="helicoil_inner_logic"/>
+        <positionref ref="helicoil_inner_position"/>
+    </physvol>
+</volume>
