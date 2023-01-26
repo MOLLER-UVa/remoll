@@ -1,4 +1,10 @@
+<!--
+  For the helicoil material the first entry is inner radius, second is outer radius
+  and the third is the length all in "mm". The the next three are position coordinates
+  `x`, `y` and `z`.
+-->
 <matrix name = "helicoil_m" coldim="6" values="
-146.05 171.45 25.4 0 0 1568.65
-146.05 171.45 25.4 0 0 1568.65
-146.05 171.45 25.4 0 0 1568.65"/>
+146.05 171.45 12.54 0 0 1581.19
+146.05 171.45 12.54 0 0 1581.19
+146.05 171.45 12.54 0 0 1581.19"/>
+
